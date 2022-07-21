@@ -1,0 +1,5 @@
+add_test( SumIntegers.Short D:/fpt/code/TinTP1_assignment_unit_test/build/tests/unit_tests.exe [==[--gtest_filter=SumIntegers.Short]==] --gtest_also_run_disabled_tests)
+set_tests_properties( SumIntegers.Short PROPERTIES WORKING_DIRECTORY D:/fpt/code/TinTP1_assignment_unit_test/build/tests SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( SumIntegers.Long D:/fpt/code/TinTP1_assignment_unit_test/build/tests/unit_tests.exe [==[--gtest_filter=SumIntegers.Long]==] --gtest_also_run_disabled_tests)
+set_tests_properties( SumIntegers.Long PROPERTIES WORKING_DIRECTORY D:/fpt/code/TinTP1_assignment_unit_test/build/tests SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set( unit_tests_TESTS SumIntegers.Short SumIntegers.Long)
