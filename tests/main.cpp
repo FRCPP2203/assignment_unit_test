@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "sum_integers_test.h"
+#include "Math/sum_integers_test.h"
 
 int main(int argc, char **argv)
 {

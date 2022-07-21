@@ -8,11 +8,13 @@ FetchContent_Declare(
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
+
 # load cpp and header files
 file(GLOB_RECURSE SOURCE_FILES "*.h" "*.cpp")
 add_executable(unit_tests main.cpp ${SOURCE_FILES})
 
-target_link_libraries(unit_tests GTest::gtest_main)
+set_target_properties(MyMath PROPERTIES LINKER_LANGUAGE CXX)
+target_link_libraries(unit_tests PRIVATE MyMath GTest::gtest_main)
 
 include(GoogleTest)
 gtest_discover_tests(unit_tests)

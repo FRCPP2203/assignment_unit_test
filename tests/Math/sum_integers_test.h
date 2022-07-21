@@ -1,4 +1,5 @@
-#include "../src/sum_integers.h"
+#include "sum_integers.h"
+
 TEST(SumIntegers, Short)
 {
     auto integers = {1, 2, 3, 4, 5};

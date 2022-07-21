@@ -1,5 +1,5 @@
 #include <iostream>
-#include "sum_integers.h"
+#include "Math/sum_integers.h"
 int main(int, char **)
 {
     auto integers = {1, 2, 3, 4, 5};

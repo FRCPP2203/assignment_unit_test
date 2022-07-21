@@ -1,5 +1,7 @@
+add_library(MyMath STATIC Math/sum_integers.h)
+target_include_directories(MyMath PUBLIC "${CMAKE_CURRENT_LIST_DIR}/Math")
 
 # load cpp and header files
 file(GLOB_RECURSE SOURCE_FILES "*.h" "*.cpp")
-
 add_executable(${PROJECT_NAME} main.cpp ${SOURCE_FILES})
+
