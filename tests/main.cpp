@@ -1,5 +1,6 @@
 #include <gtest/gtest.h>
 #include "Math/sum_integers_test.h"
+#include "Math/triangle_test.h"
 
 int main(int argc, char **argv)
 {
