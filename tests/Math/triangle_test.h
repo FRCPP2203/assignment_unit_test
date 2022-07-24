@@ -21,7 +21,7 @@ TEST(Triangle, is_not_right)
     int AC = 6;
     int BC = 8;
     // Expect True if Triangle ABC is not Right
-    EXPECT_TRUE(BC == py_ta_go(AB, AC));
+    EXPECT_FALSE(BC == py_ta_go(AB, AC));
 }
 /*
     Suite: Triangle
@@ -45,5 +45,5 @@ TEST(Triangle, is_not_triangle)
     int AC = 3;
     int BC = 2;
     // Expect Equal True if AB, AC, BC is not Edges of Triangle ABC
-    EXPECT_EQ(1, is_triangle(AB, AC, BC));
+    EXPECT_EQ(0, is_triangle(AB, AC, BC));
 }

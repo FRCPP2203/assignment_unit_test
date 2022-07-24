@@ -24,7 +24,6 @@ TEST(SumIntegers, Long)
     {
         integers.push_back(i);
     }
-    std::cout << integers[0] << ":" << integers.back();
     // verify two numbers are equal
     ASSERT_EQ(sum_integers(integers), 500500);
 }
