@@ -20,7 +20,7 @@ TEST(Triangle, is_not_right)
     int AB = 4;
     int AC = 6;
     int BC = 8;
-    // Expect True if Triangle ABC is not Right
+    // Expect False if Triangle ABC is not Right
     EXPECT_FALSE(BC == py_ta_go(AB, AC));
 }
 /*

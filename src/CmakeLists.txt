@@ -1,4 +1,4 @@
-add_library(MyMath STATIC Math/sum_integers.h Math/triangle.h)
+add_library(MyMath STATIC Math/sum_integers.h Math/triangle.h Math/counter.h Math/num.h)
 target_include_directories(MyMath PUBLIC "${CMAKE_CURRENT_LIST_DIR}/Math")
 
 # load cpp and header files
